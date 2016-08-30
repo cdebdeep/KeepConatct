@@ -1,0 +1,6 @@
+{
+  "globalDependencies": {
+    "ng-cordova/emailcomposer": "registry:dt/ng-cordova/emailcomposer#0.0.0+20160316171810",
+    "ng-cordova/toast": "registry:dt/ng-cordova/toast#0.0.0+20160316171810"
+  }
+}

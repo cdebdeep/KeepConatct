@@ -1,0 +1,55 @@
+﻿<ion-view title="Edit Contact" id="ContactEdit" ng-controller="ContactController as ContactCtrl" cache-view="false">
+    <ion-content padding="true" ng-init="ContactCtrl.Get()" class="has-header" style="background-color:rgba(240, 245, 255, 0.42);padding-top: 20px">
+        <ion-list>
+            <label class="item item-input" name="Email">
+                <span class="input-label">
+                    <i class="icon ion-ios-email-outline" style="color:firebrick"></i>
+                    Email
+                </span>
+                <input class="item  item-input" type="text" disabled="disabled" placeholder="" ng-model="ContactCtrl.EditContact.Email" style="text-align: right">
+            </label>
+
+            <label class="item item-input" name="FirstName">
+                <span class="input-label">
+                    <i class="icon ion-ios-person-outline" style="color:#886aea"></i>
+                    First Name
+                </span>
+                <input class="item item-input" type="text" placeholder="" ng-model="ContactCtrl.EditContact.FirstName" style="text-align: right">
+            </label>
+
+            <label class="item item-input" name="LastName">
+                <span class="input-label">
+                    <i class="icon ion-ios-person-outline" style="color:#03ed93"></i>
+                    Last Name
+                </span>
+                <input class="item item-input" type="text" placeholder="" ng-model="ContactCtrl.EditContact.LastName" style="text-align: right">
+            </label>
+
+            <label class="item item-input" name="Age">
+                <span class="input-label">
+                    <i class="icon ion-ios-time-outline" style="color:#11c1f3"></i>
+                    Age
+                </span>
+                <span style="text-align: right; width: 100%; padding-right: 20px;">
+                    <input type="number" placeholder="" ng-model="ContactCtrl.EditContact.Age" style="text-align: right;">
+                </span>
+            </label>
+
+            <label class="item item-input" name="CellNumber">
+                <span class="input-label">
+                    <i class="icon ion-ios-telephone-outline" style="color:firebrick"></i>
+                    Cell Number
+                </span>
+                <input class="item item-input" type="tel" placeholder="" ng-model="ContactCtrl.EditContact.CellNumber" style="text-align: right">
+            </label>
+
+        </ion-list>
+        <p></p>
+        <div style="text-align: right;padding-right: 5px; padding-top: 20px">
+            <button id="btnAddContact" style="text-align:right;"
+                    class="button  button-calm icon-left ion-android-add-circle" ng-click="ContactCtrl.Put(ContactCtrl.EditContact)">
+                Save
+            </button>
+        </div>
+    </ion-content>
+</ion-view>
